@@ -1,0 +1,1093 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B4C0FC926F3253B00B83C65 /* MbedTLS.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3B4C0FC826F3253B00B83C65 /* MbedTLS.xcconfig */; };
+		3B4C0FCD26F326A100B83C65 /* libmbedtls.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B4C0FCC26F326A100B83C65 /* libmbedtls.a */; };
+		3B4C0FD226F326F800B83C65 /* libmbedtls.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B4C0FD126F326F800B83C65 /* libmbedtls.a */; };
+		3B4C102126F3278400B83C65 /* ecdsa.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C0FDA26F3278200B83C65 /* ecdsa.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C102226F3278400B83C65 /* bignum.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C0FDB26F3278200B83C65 /* bignum.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C102326F3278400B83C65 /* pkcs11.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C0FDC26F3278200B83C65 /* pkcs11.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C102426F3278400B83C65 /* memory_buffer_alloc.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C0FDD26F3278200B83C65 /* memory_buffer_alloc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C102526F3278400B83C65 /* rsa_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C0FDE26F3278200B83C65 /* rsa_internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C102626F3278400B83C65 /* oid.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C0FDF26F3278200B83C65 /* oid.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C102726F3278400B83C65 /* cmac.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C0FE026F3278200B83C65 /* cmac.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C102826F3278400B83C65 /* havege.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C0FE126F3278200B83C65 /* havege.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C102926F3278500B83C65 /* bn_mul.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C0FE226F3278200B83C65 /* bn_mul.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C102A26F3278500B83C65 /* ccm.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C0FE326F3278200B83C65 /* ccm.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C102B26F3278500B83C65 /* pk.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C0FE426F3278200B83C65 /* pk.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C102C26F3278500B83C65 /* ssl_ciphersuites.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C0FE526F3278200B83C65 /* ssl_ciphersuites.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C102D26F3278500B83C65 /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C0FE626F3278200B83C65 /* version.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C102E26F3278500B83C65 /* gcm.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C0FE726F3278200B83C65 /* gcm.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C102F26F3278500B83C65 /* arc4.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C0FE826F3278200B83C65 /* arc4.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C103026F3278500B83C65 /* sha256.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C0FE926F3278300B83C65 /* sha256.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C103126F3278500B83C65 /* ripemd160.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C0FEA26F3278300B83C65 /* ripemd160.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C103226F3278500B83C65 /* check_config.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C0FEB26F3278300B83C65 /* check_config.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C103326F3278500B83C65 /* md4.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C0FEC26F3278300B83C65 /* md4.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C103426F3278500B83C65 /* cipher.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C0FED26F3278300B83C65 /* cipher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C103526F3278500B83C65 /* md2.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C0FEE26F3278300B83C65 /* md2.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C103626F3278500B83C65 /* x509_csr.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C0FEF26F3278300B83C65 /* x509_csr.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C103726F3278500B83C65 /* sha512.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C0FF026F3278300B83C65 /* sha512.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C103826F3278500B83C65 /* rsa.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C0FF126F3278300B83C65 /* rsa.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C103926F3278500B83C65 /* ssl_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C0FF226F3278300B83C65 /* ssl_internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C103A26F3278500B83C65 /* blowfish.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C0FF326F3278300B83C65 /* blowfish.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C103B26F3278500B83C65 /* pem.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C0FF426F3278300B83C65 /* pem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C103C26F3278500B83C65 /* pkcs12.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C0FF526F3278300B83C65 /* pkcs12.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C103D26F3278500B83C65 /* asn1write.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C0FF626F3278300B83C65 /* asn1write.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C103E26F3278500B83C65 /* asn1.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C0FF726F3278300B83C65 /* asn1.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C103F26F3278500B83C65 /* pkcs5.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C0FF826F3278300B83C65 /* pkcs5.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C104026F3278500B83C65 /* platform.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C0FF926F3278300B83C65 /* platform.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C104126F3278500B83C65 /* dhm.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C0FFA26F3278300B83C65 /* dhm.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C104226F3278500B83C65 /* entropy_poll.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C0FFB26F3278300B83C65 /* entropy_poll.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C104326F3278500B83C65 /* aes.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C0FFC26F3278300B83C65 /* aes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C104426F3278500B83C65 /* md.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C0FFD26F3278300B83C65 /* md.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C104526F3278500B83C65 /* net.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C0FFE26F3278300B83C65 /* net.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C104626F3278600B83C65 /* ssl_cookie.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C0FFF26F3278300B83C65 /* ssl_cookie.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C104726F3278600B83C65 /* error.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C100026F3278300B83C65 /* error.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C104826F3278600B83C65 /* entropy.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C100126F3278300B83C65 /* entropy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C104926F3278600B83C65 /* timing.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C100226F3278300B83C65 /* timing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C104A26F3278600B83C65 /* hmac_drbg.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C100326F3278300B83C65 /* hmac_drbg.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C104B26F3278600B83C65 /* ecjpake.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C100426F3278300B83C65 /* ecjpake.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C104C26F3278600B83C65 /* md5.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C100526F3278400B83C65 /* md5.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C104D26F3278600B83C65 /* ecp.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C100626F3278400B83C65 /* ecp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C104E26F3278600B83C65 /* aesni.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C100726F3278400B83C65 /* aesni.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C104F26F3278600B83C65 /* base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C100826F3278400B83C65 /* base64.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C105026F3278600B83C65 /* ssl_ticket.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C100926F3278400B83C65 /* ssl_ticket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C105126F3278600B83C65 /* ctr_drbg.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C100A26F3278400B83C65 /* ctr_drbg.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C105226F3278600B83C65 /* padlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C100B26F3278400B83C65 /* padlock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C105326F3278600B83C65 /* camellia.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C100C26F3278400B83C65 /* camellia.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C105426F3278600B83C65 /* threading.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C100D26F3278400B83C65 /* threading.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C105526F3278600B83C65 /* cipher_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C100E26F3278400B83C65 /* cipher_internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C105626F3278600B83C65 /* md_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C100F26F3278400B83C65 /* md_internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C105726F3278600B83C65 /* certs.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C101026F3278400B83C65 /* certs.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C105826F3278600B83C65 /* debug.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C101126F3278400B83C65 /* debug.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C105926F3278600B83C65 /* xtea.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C101226F3278400B83C65 /* xtea.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C105A26F3278600B83C65 /* pk_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C101326F3278400B83C65 /* pk_internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C105B26F3278600B83C65 /* ecp_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C101426F3278400B83C65 /* ecp_internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C105C26F3278600B83C65 /* platform_time.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C101526F3278400B83C65 /* platform_time.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C105D26F3278600B83C65 /* x509_crt.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C101626F3278400B83C65 /* x509_crt.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C105E26F3278600B83C65 /* x509_crl.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C101726F3278400B83C65 /* x509_crl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C105F26F3278600B83C65 /* compat-1.3.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C101826F3278400B83C65 /* compat-1.3.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C106026F3278600B83C65 /* des.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C101926F3278400B83C65 /* des.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C106126F3278600B83C65 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C101A26F3278400B83C65 /* config.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C106226F3278600B83C65 /* ecdh.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C101B26F3278400B83C65 /* ecdh.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C106326F3278700B83C65 /* ssl.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C101C26F3278400B83C65 /* ssl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C106426F3278700B83C65 /* net_sockets.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C101D26F3278400B83C65 /* net_sockets.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C106526F3278700B83C65 /* sha1.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C101E26F3278400B83C65 /* sha1.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C106626F3278700B83C65 /* ssl_cache.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C101F26F3278400B83C65 /* ssl_cache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C106726F3278700B83C65 /* x509.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C102026F3278400B83C65 /* x509.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C10F926F327B300B83C65 /* MbedTLS.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C10F826F327B300B83C65 /* MbedTLS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C11D126F327FE00B83C65 /* timing.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C118A26F327FB00B83C65 /* timing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C11D226F327FE00B83C65 /* camellia.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C118B26F327FB00B83C65 /* camellia.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C11D326F327FE00B83C65 /* des.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C118C26F327FC00B83C65 /* des.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C11D426F327FE00B83C65 /* md5.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C118D26F327FC00B83C65 /* md5.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C11D526F327FE00B83C65 /* havege.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C118E26F327FC00B83C65 /* havege.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C11D626F327FE00B83C65 /* md2.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C118F26F327FC00B83C65 /* md2.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C11D726F327FE00B83C65 /* ripemd160.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C119026F327FC00B83C65 /* ripemd160.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C11D826F327FE00B83C65 /* x509_crl.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C119126F327FC00B83C65 /* x509_crl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C11D926F327FE00B83C65 /* ecdh.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C119226F327FC00B83C65 /* ecdh.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C11DA26F327FE00B83C65 /* gcm.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C119326F327FC00B83C65 /* gcm.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C11DB26F327FE00B83C65 /* cipher_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C119426F327FC00B83C65 /* cipher_internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C11DC26F327FE00B83C65 /* sha256.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C119526F327FC00B83C65 /* sha256.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C11DD26F327FE00B83C65 /* compat-1.3.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C119626F327FC00B83C65 /* compat-1.3.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C11DE26F327FE00B83C65 /* asn1write.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C119726F327FC00B83C65 /* asn1write.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C11DF26F327FF00B83C65 /* oid.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C119826F327FC00B83C65 /* oid.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C11E026F327FF00B83C65 /* sha1.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C119926F327FC00B83C65 /* sha1.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C11E126F327FF00B83C65 /* blowfish.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C119A26F327FC00B83C65 /* blowfish.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C11E226F327FF00B83C65 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C119B26F327FC00B83C65 /* config.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C11E326F327FF00B83C65 /* sha512.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C119C26F327FC00B83C65 /* sha512.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C11E426F327FF00B83C65 /* ssl_cookie.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C119D26F327FC00B83C65 /* ssl_cookie.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C11E526F327FF00B83C65 /* bignum.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C119E26F327FC00B83C65 /* bignum.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C11E626F327FF00B83C65 /* platform.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C119F26F327FC00B83C65 /* platform.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C11E726F327FF00B83C65 /* hmac_drbg.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C11A026F327FC00B83C65 /* hmac_drbg.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C11E826F327FF00B83C65 /* ecjpake.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C11A126F327FC00B83C65 /* ecjpake.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C11E926F327FF00B83C65 /* ssl_ciphersuites.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C11A226F327FC00B83C65 /* ssl_ciphersuites.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C11EA26F327FF00B83C65 /* certs.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C11A326F327FC00B83C65 /* certs.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C11EB26F327FF00B83C65 /* check_config.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C11A426F327FC00B83C65 /* check_config.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C11EC26F327FF00B83C65 /* md.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C11A526F327FC00B83C65 /* md.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C11ED26F327FF00B83C65 /* error.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C11A626F327FC00B83C65 /* error.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C11EE26F3280000B83C65 /* debug.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C11A726F327FC00B83C65 /* debug.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C11EF26F3280000B83C65 /* rsa.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C11A826F327FC00B83C65 /* rsa.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C11F026F3280000B83C65 /* threading.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C11A926F327FC00B83C65 /* threading.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C11F126F3280000B83C65 /* ccm.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C11AA26F327FC00B83C65 /* ccm.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C11F226F3280000B83C65 /* xtea.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C11AB26F327FC00B83C65 /* xtea.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C11F326F3280000B83C65 /* net_sockets.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C11AC26F327FC00B83C65 /* net_sockets.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C11F426F3280000B83C65 /* ecp_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C11AD26F327FC00B83C65 /* ecp_internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C11F526F3280000B83C65 /* pk.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C11AE26F327FC00B83C65 /* pk.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C11F626F3280000B83C65 /* net.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C11AF26F327FD00B83C65 /* net.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C11F726F3280000B83C65 /* pem.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C11B026F327FD00B83C65 /* pem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C11F826F3280000B83C65 /* ssl_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C11B126F327FD00B83C65 /* ssl_internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C11F926F3280000B83C65 /* base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C11B226F327FD00B83C65 /* base64.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C11FA26F3280000B83C65 /* entropy_poll.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C11B326F327FD00B83C65 /* entropy_poll.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C11FB26F3280000B83C65 /* memory_buffer_alloc.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C11B426F327FD00B83C65 /* memory_buffer_alloc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C11FC26F3280100B83C65 /* cmac.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C11B526F327FD00B83C65 /* cmac.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C11FD26F3280100B83C65 /* cipher.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C11B626F327FD00B83C65 /* cipher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C11FE26F3280100B83C65 /* pkcs12.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C11B726F327FD00B83C65 /* pkcs12.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C11FF26F3280100B83C65 /* rsa_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C11B826F327FD00B83C65 /* rsa_internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C120026F3280100B83C65 /* ssl_ticket.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C11B926F327FD00B83C65 /* ssl_ticket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C120126F3280100B83C65 /* aesni.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C11BA26F327FD00B83C65 /* aesni.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C120226F3280100B83C65 /* ctr_drbg.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C11BB26F327FD00B83C65 /* ctr_drbg.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C120326F3280100B83C65 /* ecp.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C11BC26F327FD00B83C65 /* ecp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C120426F3280100B83C65 /* pk_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C11BD26F327FD00B83C65 /* pk_internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C120526F3280100B83C65 /* arc4.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C11BE26F327FD00B83C65 /* arc4.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C120626F3280100B83C65 /* asn1.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C11BF26F327FD00B83C65 /* asn1.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C120726F3280100B83C65 /* padlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C11C026F327FD00B83C65 /* padlock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C120826F3280100B83C65 /* x509_csr.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C11C126F327FD00B83C65 /* x509_csr.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C120926F3280100B83C65 /* dhm.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C11C226F327FD00B83C65 /* dhm.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C120A26F3280200B83C65 /* ssl.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C11C326F327FD00B83C65 /* ssl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C120B26F3280200B83C65 /* aes.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C11C426F327FD00B83C65 /* aes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C120C26F3280200B83C65 /* pkcs5.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C11C526F327FD00B83C65 /* pkcs5.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C120D26F3280200B83C65 /* ecdsa.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C11C626F327FD00B83C65 /* ecdsa.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C120E26F3280200B83C65 /* ssl_cache.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C11C726F327FD00B83C65 /* ssl_cache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C120F26F3280200B83C65 /* platform_time.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C11C826F327FD00B83C65 /* platform_time.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C121026F3280200B83C65 /* md_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C11C926F327FD00B83C65 /* md_internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C121126F3280200B83C65 /* x509.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C11CA26F327FD00B83C65 /* x509.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C121226F3280200B83C65 /* pkcs11.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C11CB26F327FD00B83C65 /* pkcs11.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C121326F3280200B83C65 /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C11CC26F327FD00B83C65 /* version.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C121426F3280200B83C65 /* bn_mul.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C11CD26F327FD00B83C65 /* bn_mul.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C121526F3280200B83C65 /* md4.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C11CE26F327FE00B83C65 /* md4.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C121626F3280200B83C65 /* x509_crt.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C11CF26F327FE00B83C65 /* x509_crt.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C121726F3280300B83C65 /* entropy.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C11D026F327FE00B83C65 /* entropy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4C121926F3280A00B83C65 /* MbedTLS.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4C121826F3280A00B83C65 /* MbedTLS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3B4C0F9C26F323CF00B83C65 /* MbedTLS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MbedTLS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B4C0FBD26F3241600B83C65 /* MbedTLS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MbedTLS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B4C0FC826F3253B00B83C65 /* MbedTLS.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = MbedTLS.xcconfig; sourceTree = "<group>"; };
+		3B4C0FCC26F326A100B83C65 /* libmbedtls.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmbedtls.a; path = iphoneos/libmbedtls.a; sourceTree = SOURCE_ROOT; };
+		3B4C0FD126F326F800B83C65 /* libmbedtls.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmbedtls.a; path = iphonesimulator/libmbedtls.a; sourceTree = "<group>"; };
+		3B4C0FDA26F3278200B83C65 /* ecdsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ecdsa.h; path = iphonesimulator/include/ecdsa.h; sourceTree = "<group>"; };
+		3B4C0FDB26F3278200B83C65 /* bignum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bignum.h; path = iphonesimulator/include/bignum.h; sourceTree = "<group>"; };
+		3B4C0FDC26F3278200B83C65 /* pkcs11.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pkcs11.h; path = iphonesimulator/include/pkcs11.h; sourceTree = "<group>"; };
+		3B4C0FDD26F3278200B83C65 /* memory_buffer_alloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = memory_buffer_alloc.h; path = iphonesimulator/include/memory_buffer_alloc.h; sourceTree = "<group>"; };
+		3B4C0FDE26F3278200B83C65 /* rsa_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rsa_internal.h; path = iphonesimulator/include/rsa_internal.h; sourceTree = "<group>"; };
+		3B4C0FDF26F3278200B83C65 /* oid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = oid.h; path = iphonesimulator/include/oid.h; sourceTree = "<group>"; };
+		3B4C0FE026F3278200B83C65 /* cmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cmac.h; path = iphonesimulator/include/cmac.h; sourceTree = "<group>"; };
+		3B4C0FE126F3278200B83C65 /* havege.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = havege.h; path = iphonesimulator/include/havege.h; sourceTree = "<group>"; };
+		3B4C0FE226F3278200B83C65 /* bn_mul.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bn_mul.h; path = iphonesimulator/include/bn_mul.h; sourceTree = "<group>"; };
+		3B4C0FE326F3278200B83C65 /* ccm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ccm.h; path = iphonesimulator/include/ccm.h; sourceTree = "<group>"; };
+		3B4C0FE426F3278200B83C65 /* pk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pk.h; path = iphonesimulator/include/pk.h; sourceTree = "<group>"; };
+		3B4C0FE526F3278200B83C65 /* ssl_ciphersuites.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ssl_ciphersuites.h; path = iphonesimulator/include/ssl_ciphersuites.h; sourceTree = "<group>"; };
+		3B4C0FE626F3278200B83C65 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = version.h; path = iphonesimulator/include/version.h; sourceTree = "<group>"; };
+		3B4C0FE726F3278200B83C65 /* gcm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = gcm.h; path = iphonesimulator/include/gcm.h; sourceTree = "<group>"; };
+		3B4C0FE826F3278200B83C65 /* arc4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = arc4.h; path = iphonesimulator/include/arc4.h; sourceTree = "<group>"; };
+		3B4C0FE926F3278300B83C65 /* sha256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sha256.h; path = iphonesimulator/include/sha256.h; sourceTree = "<group>"; };
+		3B4C0FEA26F3278300B83C65 /* ripemd160.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ripemd160.h; path = iphonesimulator/include/ripemd160.h; sourceTree = "<group>"; };
+		3B4C0FEB26F3278300B83C65 /* check_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = check_config.h; path = iphonesimulator/include/check_config.h; sourceTree = "<group>"; };
+		3B4C0FEC26F3278300B83C65 /* md4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = md4.h; path = iphonesimulator/include/md4.h; sourceTree = "<group>"; };
+		3B4C0FED26F3278300B83C65 /* cipher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cipher.h; path = iphonesimulator/include/cipher.h; sourceTree = "<group>"; };
+		3B4C0FEE26F3278300B83C65 /* md2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = md2.h; path = iphonesimulator/include/md2.h; sourceTree = "<group>"; };
+		3B4C0FEF26F3278300B83C65 /* x509_csr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = x509_csr.h; path = iphonesimulator/include/x509_csr.h; sourceTree = "<group>"; };
+		3B4C0FF026F3278300B83C65 /* sha512.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sha512.h; path = iphonesimulator/include/sha512.h; sourceTree = "<group>"; };
+		3B4C0FF126F3278300B83C65 /* rsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rsa.h; path = iphonesimulator/include/rsa.h; sourceTree = "<group>"; };
+		3B4C0FF226F3278300B83C65 /* ssl_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ssl_internal.h; path = iphonesimulator/include/ssl_internal.h; sourceTree = "<group>"; };
+		3B4C0FF326F3278300B83C65 /* blowfish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = blowfish.h; path = iphonesimulator/include/blowfish.h; sourceTree = "<group>"; };
+		3B4C0FF426F3278300B83C65 /* pem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pem.h; path = iphonesimulator/include/pem.h; sourceTree = "<group>"; };
+		3B4C0FF526F3278300B83C65 /* pkcs12.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pkcs12.h; path = iphonesimulator/include/pkcs12.h; sourceTree = "<group>"; };
+		3B4C0FF626F3278300B83C65 /* asn1write.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = asn1write.h; path = iphonesimulator/include/asn1write.h; sourceTree = "<group>"; };
+		3B4C0FF726F3278300B83C65 /* asn1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = asn1.h; path = iphonesimulator/include/asn1.h; sourceTree = "<group>"; };
+		3B4C0FF826F3278300B83C65 /* pkcs5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pkcs5.h; path = iphonesimulator/include/pkcs5.h; sourceTree = "<group>"; };
+		3B4C0FF926F3278300B83C65 /* platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = platform.h; path = iphonesimulator/include/platform.h; sourceTree = "<group>"; };
+		3B4C0FFA26F3278300B83C65 /* dhm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dhm.h; path = iphonesimulator/include/dhm.h; sourceTree = "<group>"; };
+		3B4C0FFB26F3278300B83C65 /* entropy_poll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = entropy_poll.h; path = iphonesimulator/include/entropy_poll.h; sourceTree = "<group>"; };
+		3B4C0FFC26F3278300B83C65 /* aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = aes.h; path = iphonesimulator/include/aes.h; sourceTree = "<group>"; };
+		3B4C0FFD26F3278300B83C65 /* md.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = md.h; path = iphonesimulator/include/md.h; sourceTree = "<group>"; };
+		3B4C0FFE26F3278300B83C65 /* net.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = net.h; path = iphonesimulator/include/net.h; sourceTree = "<group>"; };
+		3B4C0FFF26F3278300B83C65 /* ssl_cookie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ssl_cookie.h; path = iphonesimulator/include/ssl_cookie.h; sourceTree = "<group>"; };
+		3B4C100026F3278300B83C65 /* error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = error.h; path = iphonesimulator/include/error.h; sourceTree = "<group>"; };
+		3B4C100126F3278300B83C65 /* entropy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = entropy.h; path = iphonesimulator/include/entropy.h; sourceTree = "<group>"; };
+		3B4C100226F3278300B83C65 /* timing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = timing.h; path = iphonesimulator/include/timing.h; sourceTree = "<group>"; };
+		3B4C100326F3278300B83C65 /* hmac_drbg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hmac_drbg.h; path = iphonesimulator/include/hmac_drbg.h; sourceTree = "<group>"; };
+		3B4C100426F3278300B83C65 /* ecjpake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ecjpake.h; path = iphonesimulator/include/ecjpake.h; sourceTree = "<group>"; };
+		3B4C100526F3278400B83C65 /* md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = md5.h; path = iphonesimulator/include/md5.h; sourceTree = "<group>"; };
+		3B4C100626F3278400B83C65 /* ecp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ecp.h; path = iphonesimulator/include/ecp.h; sourceTree = "<group>"; };
+		3B4C100726F3278400B83C65 /* aesni.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = aesni.h; path = iphonesimulator/include/aesni.h; sourceTree = "<group>"; };
+		3B4C100826F3278400B83C65 /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = base64.h; path = iphonesimulator/include/base64.h; sourceTree = "<group>"; };
+		3B4C100926F3278400B83C65 /* ssl_ticket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ssl_ticket.h; path = iphonesimulator/include/ssl_ticket.h; sourceTree = "<group>"; };
+		3B4C100A26F3278400B83C65 /* ctr_drbg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ctr_drbg.h; path = iphonesimulator/include/ctr_drbg.h; sourceTree = "<group>"; };
+		3B4C100B26F3278400B83C65 /* padlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = padlock.h; path = iphonesimulator/include/padlock.h; sourceTree = "<group>"; };
+		3B4C100C26F3278400B83C65 /* camellia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = camellia.h; path = iphonesimulator/include/camellia.h; sourceTree = "<group>"; };
+		3B4C100D26F3278400B83C65 /* threading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = threading.h; path = iphonesimulator/include/threading.h; sourceTree = "<group>"; };
+		3B4C100E26F3278400B83C65 /* cipher_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cipher_internal.h; path = iphonesimulator/include/cipher_internal.h; sourceTree = "<group>"; };
+		3B4C100F26F3278400B83C65 /* md_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = md_internal.h; path = iphonesimulator/include/md_internal.h; sourceTree = "<group>"; };
+		3B4C101026F3278400B83C65 /* certs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = certs.h; path = iphonesimulator/include/certs.h; sourceTree = "<group>"; };
+		3B4C101126F3278400B83C65 /* debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = debug.h; path = iphonesimulator/include/debug.h; sourceTree = "<group>"; };
+		3B4C101226F3278400B83C65 /* xtea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = xtea.h; path = iphonesimulator/include/xtea.h; sourceTree = "<group>"; };
+		3B4C101326F3278400B83C65 /* pk_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pk_internal.h; path = iphonesimulator/include/pk_internal.h; sourceTree = "<group>"; };
+		3B4C101426F3278400B83C65 /* ecp_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ecp_internal.h; path = iphonesimulator/include/ecp_internal.h; sourceTree = "<group>"; };
+		3B4C101526F3278400B83C65 /* platform_time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = platform_time.h; path = iphonesimulator/include/platform_time.h; sourceTree = "<group>"; };
+		3B4C101626F3278400B83C65 /* x509_crt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = x509_crt.h; path = iphonesimulator/include/x509_crt.h; sourceTree = "<group>"; };
+		3B4C101726F3278400B83C65 /* x509_crl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = x509_crl.h; path = iphonesimulator/include/x509_crl.h; sourceTree = "<group>"; };
+		3B4C101826F3278400B83C65 /* compat-1.3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "compat-1.3.h"; path = "iphonesimulator/include/compat-1.3.h"; sourceTree = "<group>"; };
+		3B4C101926F3278400B83C65 /* des.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = des.h; path = iphonesimulator/include/des.h; sourceTree = "<group>"; };
+		3B4C101A26F3278400B83C65 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = iphonesimulator/include/config.h; sourceTree = "<group>"; };
+		3B4C101B26F3278400B83C65 /* ecdh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ecdh.h; path = iphonesimulator/include/ecdh.h; sourceTree = "<group>"; };
+		3B4C101C26F3278400B83C65 /* ssl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ssl.h; path = iphonesimulator/include/ssl.h; sourceTree = "<group>"; };
+		3B4C101D26F3278400B83C65 /* net_sockets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = net_sockets.h; path = iphonesimulator/include/net_sockets.h; sourceTree = "<group>"; };
+		3B4C101E26F3278400B83C65 /* sha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sha1.h; path = iphonesimulator/include/sha1.h; sourceTree = "<group>"; };
+		3B4C101F26F3278400B83C65 /* ssl_cache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ssl_cache.h; path = iphonesimulator/include/ssl_cache.h; sourceTree = "<group>"; };
+		3B4C102026F3278400B83C65 /* x509.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = x509.h; path = iphonesimulator/include/x509.h; sourceTree = "<group>"; };
+		3B4C10F826F327B300B83C65 /* MbedTLS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MbedTLS.h; path = support/iphonesimulator/MbedTLS.h; sourceTree = "<group>"; };
+		3B4C118A26F327FB00B83C65 /* timing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = timing.h; path = iphoneos/include/timing.h; sourceTree = "<group>"; };
+		3B4C118B26F327FB00B83C65 /* camellia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = camellia.h; path = iphoneos/include/camellia.h; sourceTree = "<group>"; };
+		3B4C118C26F327FC00B83C65 /* des.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = des.h; path = iphoneos/include/des.h; sourceTree = "<group>"; };
+		3B4C118D26F327FC00B83C65 /* md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = md5.h; path = iphoneos/include/md5.h; sourceTree = "<group>"; };
+		3B4C118E26F327FC00B83C65 /* havege.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = havege.h; path = iphoneos/include/havege.h; sourceTree = "<group>"; };
+		3B4C118F26F327FC00B83C65 /* md2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = md2.h; path = iphoneos/include/md2.h; sourceTree = "<group>"; };
+		3B4C119026F327FC00B83C65 /* ripemd160.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ripemd160.h; path = iphoneos/include/ripemd160.h; sourceTree = "<group>"; };
+		3B4C119126F327FC00B83C65 /* x509_crl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = x509_crl.h; path = iphoneos/include/x509_crl.h; sourceTree = "<group>"; };
+		3B4C119226F327FC00B83C65 /* ecdh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ecdh.h; path = iphoneos/include/ecdh.h; sourceTree = "<group>"; };
+		3B4C119326F327FC00B83C65 /* gcm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = gcm.h; path = iphoneos/include/gcm.h; sourceTree = "<group>"; };
+		3B4C119426F327FC00B83C65 /* cipher_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cipher_internal.h; path = iphoneos/include/cipher_internal.h; sourceTree = "<group>"; };
+		3B4C119526F327FC00B83C65 /* sha256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sha256.h; path = iphoneos/include/sha256.h; sourceTree = "<group>"; };
+		3B4C119626F327FC00B83C65 /* compat-1.3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "compat-1.3.h"; path = "iphoneos/include/compat-1.3.h"; sourceTree = "<group>"; };
+		3B4C119726F327FC00B83C65 /* asn1write.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = asn1write.h; path = iphoneos/include/asn1write.h; sourceTree = "<group>"; };
+		3B4C119826F327FC00B83C65 /* oid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = oid.h; path = iphoneos/include/oid.h; sourceTree = "<group>"; };
+		3B4C119926F327FC00B83C65 /* sha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sha1.h; path = iphoneos/include/sha1.h; sourceTree = "<group>"; };
+		3B4C119A26F327FC00B83C65 /* blowfish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = blowfish.h; path = iphoneos/include/blowfish.h; sourceTree = "<group>"; };
+		3B4C119B26F327FC00B83C65 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = iphoneos/include/config.h; sourceTree = "<group>"; };
+		3B4C119C26F327FC00B83C65 /* sha512.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sha512.h; path = iphoneos/include/sha512.h; sourceTree = "<group>"; };
+		3B4C119D26F327FC00B83C65 /* ssl_cookie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ssl_cookie.h; path = iphoneos/include/ssl_cookie.h; sourceTree = "<group>"; };
+		3B4C119E26F327FC00B83C65 /* bignum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bignum.h; path = iphoneos/include/bignum.h; sourceTree = "<group>"; };
+		3B4C119F26F327FC00B83C65 /* platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = platform.h; path = iphoneos/include/platform.h; sourceTree = "<group>"; };
+		3B4C11A026F327FC00B83C65 /* hmac_drbg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hmac_drbg.h; path = iphoneos/include/hmac_drbg.h; sourceTree = "<group>"; };
+		3B4C11A126F327FC00B83C65 /* ecjpake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ecjpake.h; path = iphoneos/include/ecjpake.h; sourceTree = "<group>"; };
+		3B4C11A226F327FC00B83C65 /* ssl_ciphersuites.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ssl_ciphersuites.h; path = iphoneos/include/ssl_ciphersuites.h; sourceTree = "<group>"; };
+		3B4C11A326F327FC00B83C65 /* certs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = certs.h; path = iphoneos/include/certs.h; sourceTree = "<group>"; };
+		3B4C11A426F327FC00B83C65 /* check_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = check_config.h; path = iphoneos/include/check_config.h; sourceTree = "<group>"; };
+		3B4C11A526F327FC00B83C65 /* md.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = md.h; path = iphoneos/include/md.h; sourceTree = "<group>"; };
+		3B4C11A626F327FC00B83C65 /* error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = error.h; path = iphoneos/include/error.h; sourceTree = "<group>"; };
+		3B4C11A726F327FC00B83C65 /* debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = debug.h; path = iphoneos/include/debug.h; sourceTree = "<group>"; };
+		3B4C11A826F327FC00B83C65 /* rsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rsa.h; path = iphoneos/include/rsa.h; sourceTree = "<group>"; };
+		3B4C11A926F327FC00B83C65 /* threading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = threading.h; path = iphoneos/include/threading.h; sourceTree = "<group>"; };
+		3B4C11AA26F327FC00B83C65 /* ccm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ccm.h; path = iphoneos/include/ccm.h; sourceTree = "<group>"; };
+		3B4C11AB26F327FC00B83C65 /* xtea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = xtea.h; path = iphoneos/include/xtea.h; sourceTree = "<group>"; };
+		3B4C11AC26F327FC00B83C65 /* net_sockets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = net_sockets.h; path = iphoneos/include/net_sockets.h; sourceTree = "<group>"; };
+		3B4C11AD26F327FC00B83C65 /* ecp_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ecp_internal.h; path = iphoneos/include/ecp_internal.h; sourceTree = "<group>"; };
+		3B4C11AE26F327FC00B83C65 /* pk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pk.h; path = iphoneos/include/pk.h; sourceTree = "<group>"; };
+		3B4C11AF26F327FD00B83C65 /* net.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = net.h; path = iphoneos/include/net.h; sourceTree = "<group>"; };
+		3B4C11B026F327FD00B83C65 /* pem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pem.h; path = iphoneos/include/pem.h; sourceTree = "<group>"; };
+		3B4C11B126F327FD00B83C65 /* ssl_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ssl_internal.h; path = iphoneos/include/ssl_internal.h; sourceTree = "<group>"; };
+		3B4C11B226F327FD00B83C65 /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = base64.h; path = iphoneos/include/base64.h; sourceTree = "<group>"; };
+		3B4C11B326F327FD00B83C65 /* entropy_poll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = entropy_poll.h; path = iphoneos/include/entropy_poll.h; sourceTree = "<group>"; };
+		3B4C11B426F327FD00B83C65 /* memory_buffer_alloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = memory_buffer_alloc.h; path = iphoneos/include/memory_buffer_alloc.h; sourceTree = "<group>"; };
+		3B4C11B526F327FD00B83C65 /* cmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cmac.h; path = iphoneos/include/cmac.h; sourceTree = "<group>"; };
+		3B4C11B626F327FD00B83C65 /* cipher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cipher.h; path = iphoneos/include/cipher.h; sourceTree = "<group>"; };
+		3B4C11B726F327FD00B83C65 /* pkcs12.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pkcs12.h; path = iphoneos/include/pkcs12.h; sourceTree = "<group>"; };
+		3B4C11B826F327FD00B83C65 /* rsa_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rsa_internal.h; path = iphoneos/include/rsa_internal.h; sourceTree = "<group>"; };
+		3B4C11B926F327FD00B83C65 /* ssl_ticket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ssl_ticket.h; path = iphoneos/include/ssl_ticket.h; sourceTree = "<group>"; };
+		3B4C11BA26F327FD00B83C65 /* aesni.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = aesni.h; path = iphoneos/include/aesni.h; sourceTree = "<group>"; };
+		3B4C11BB26F327FD00B83C65 /* ctr_drbg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ctr_drbg.h; path = iphoneos/include/ctr_drbg.h; sourceTree = "<group>"; };
+		3B4C11BC26F327FD00B83C65 /* ecp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ecp.h; path = iphoneos/include/ecp.h; sourceTree = "<group>"; };
+		3B4C11BD26F327FD00B83C65 /* pk_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pk_internal.h; path = iphoneos/include/pk_internal.h; sourceTree = "<group>"; };
+		3B4C11BE26F327FD00B83C65 /* arc4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = arc4.h; path = iphoneos/include/arc4.h; sourceTree = "<group>"; };
+		3B4C11BF26F327FD00B83C65 /* asn1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = asn1.h; path = iphoneos/include/asn1.h; sourceTree = "<group>"; };
+		3B4C11C026F327FD00B83C65 /* padlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = padlock.h; path = iphoneos/include/padlock.h; sourceTree = "<group>"; };
+		3B4C11C126F327FD00B83C65 /* x509_csr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = x509_csr.h; path = iphoneos/include/x509_csr.h; sourceTree = "<group>"; };
+		3B4C11C226F327FD00B83C65 /* dhm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dhm.h; path = iphoneos/include/dhm.h; sourceTree = "<group>"; };
+		3B4C11C326F327FD00B83C65 /* ssl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ssl.h; path = iphoneos/include/ssl.h; sourceTree = "<group>"; };
+		3B4C11C426F327FD00B83C65 /* aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = aes.h; path = iphoneos/include/aes.h; sourceTree = "<group>"; };
+		3B4C11C526F327FD00B83C65 /* pkcs5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pkcs5.h; path = iphoneos/include/pkcs5.h; sourceTree = "<group>"; };
+		3B4C11C626F327FD00B83C65 /* ecdsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ecdsa.h; path = iphoneos/include/ecdsa.h; sourceTree = "<group>"; };
+		3B4C11C726F327FD00B83C65 /* ssl_cache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ssl_cache.h; path = iphoneos/include/ssl_cache.h; sourceTree = "<group>"; };
+		3B4C11C826F327FD00B83C65 /* platform_time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = platform_time.h; path = iphoneos/include/platform_time.h; sourceTree = "<group>"; };
+		3B4C11C926F327FD00B83C65 /* md_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = md_internal.h; path = iphoneos/include/md_internal.h; sourceTree = "<group>"; };
+		3B4C11CA26F327FD00B83C65 /* x509.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = x509.h; path = iphoneos/include/x509.h; sourceTree = "<group>"; };
+		3B4C11CB26F327FD00B83C65 /* pkcs11.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pkcs11.h; path = iphoneos/include/pkcs11.h; sourceTree = "<group>"; };
+		3B4C11CC26F327FD00B83C65 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = version.h; path = iphoneos/include/version.h; sourceTree = "<group>"; };
+		3B4C11CD26F327FD00B83C65 /* bn_mul.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bn_mul.h; path = iphoneos/include/bn_mul.h; sourceTree = "<group>"; };
+		3B4C11CE26F327FE00B83C65 /* md4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = md4.h; path = iphoneos/include/md4.h; sourceTree = "<group>"; };
+		3B4C11CF26F327FE00B83C65 /* x509_crt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = x509_crt.h; path = iphoneos/include/x509_crt.h; sourceTree = "<group>"; };
+		3B4C11D026F327FE00B83C65 /* entropy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = entropy.h; path = iphoneos/include/entropy.h; sourceTree = "<group>"; };
+		3B4C121826F3280A00B83C65 /* MbedTLS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MbedTLS.h; path = support/iphoneos/MbedTLS.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B4C0F9926F323CF00B83C65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B4C0FCD26F326A100B83C65 /* libmbedtls.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B4C0FB826F3241600B83C65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B4C0FD226F326F800B83C65 /* libmbedtls.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B4C0F9226F323CE00B83C65 = {
+			isa = PBXGroup;
+			children = (
+				3B4C0FD626F3275300B83C65 /* iphonesimulator */,
+				3B4C0FD426F3273F00B83C65 /* iphoneos */,
+				3B4C0FD026F326B900B83C65 /* Frameworks */,
+				3B4C0FC826F3253B00B83C65 /* MbedTLS.xcconfig */,
+				3B4C0F9D26F323CF00B83C65 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3B4C0F9D26F323CF00B83C65 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B4C0F9C26F323CF00B83C65 /* MbedTLS.framework */,
+				3B4C0FBD26F3241600B83C65 /* MbedTLS.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B4C0FD026F326B900B83C65 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B4C0FD126F326F800B83C65 /* libmbedtls.a */,
+				3B4C0FCC26F326A100B83C65 /* libmbedtls.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3B4C0FD426F3273F00B83C65 /* iphoneos */ = {
+			isa = PBXGroup;
+			children = (
+				3B4C118926F327EB00B83C65 /* Headers */,
+			);
+			name = iphoneos;
+			sourceTree = "<group>";
+		};
+		3B4C0FD626F3275300B83C65 /* iphonesimulator */ = {
+			isa = PBXGroup;
+			children = (
+				3B4C0FD826F3277000B83C65 /* Headers */,
+			);
+			name = iphonesimulator;
+			sourceTree = "<group>";
+		};
+		3B4C0FD826F3277000B83C65 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				3B4C10F826F327B300B83C65 /* MbedTLS.h */,
+				3B4C0FFC26F3278300B83C65 /* aes.h */,
+				3B4C100726F3278400B83C65 /* aesni.h */,
+				3B4C0FE826F3278200B83C65 /* arc4.h */,
+				3B4C0FF726F3278300B83C65 /* asn1.h */,
+				3B4C0FF626F3278300B83C65 /* asn1write.h */,
+				3B4C100826F3278400B83C65 /* base64.h */,
+				3B4C0FDB26F3278200B83C65 /* bignum.h */,
+				3B4C0FF326F3278300B83C65 /* blowfish.h */,
+				3B4C0FE226F3278200B83C65 /* bn_mul.h */,
+				3B4C100C26F3278400B83C65 /* camellia.h */,
+				3B4C0FE326F3278200B83C65 /* ccm.h */,
+				3B4C101026F3278400B83C65 /* certs.h */,
+				3B4C0FEB26F3278300B83C65 /* check_config.h */,
+				3B4C100E26F3278400B83C65 /* cipher_internal.h */,
+				3B4C0FED26F3278300B83C65 /* cipher.h */,
+				3B4C0FE026F3278200B83C65 /* cmac.h */,
+				3B4C101826F3278400B83C65 /* compat-1.3.h */,
+				3B4C101A26F3278400B83C65 /* config.h */,
+				3B4C100A26F3278400B83C65 /* ctr_drbg.h */,
+				3B4C101126F3278400B83C65 /* debug.h */,
+				3B4C101926F3278400B83C65 /* des.h */,
+				3B4C0FFA26F3278300B83C65 /* dhm.h */,
+				3B4C101B26F3278400B83C65 /* ecdh.h */,
+				3B4C0FDA26F3278200B83C65 /* ecdsa.h */,
+				3B4C100426F3278300B83C65 /* ecjpake.h */,
+				3B4C101426F3278400B83C65 /* ecp_internal.h */,
+				3B4C100626F3278400B83C65 /* ecp.h */,
+				3B4C0FFB26F3278300B83C65 /* entropy_poll.h */,
+				3B4C100126F3278300B83C65 /* entropy.h */,
+				3B4C100026F3278300B83C65 /* error.h */,
+				3B4C0FE726F3278200B83C65 /* gcm.h */,
+				3B4C0FE126F3278200B83C65 /* havege.h */,
+				3B4C100326F3278300B83C65 /* hmac_drbg.h */,
+				3B4C100F26F3278400B83C65 /* md_internal.h */,
+				3B4C0FFD26F3278300B83C65 /* md.h */,
+				3B4C0FEE26F3278300B83C65 /* md2.h */,
+				3B4C0FEC26F3278300B83C65 /* md4.h */,
+				3B4C100526F3278400B83C65 /* md5.h */,
+				3B4C0FDD26F3278200B83C65 /* memory_buffer_alloc.h */,
+				3B4C101D26F3278400B83C65 /* net_sockets.h */,
+				3B4C0FFE26F3278300B83C65 /* net.h */,
+				3B4C0FDF26F3278200B83C65 /* oid.h */,
+				3B4C100B26F3278400B83C65 /* padlock.h */,
+				3B4C0FF426F3278300B83C65 /* pem.h */,
+				3B4C101326F3278400B83C65 /* pk_internal.h */,
+				3B4C0FE426F3278200B83C65 /* pk.h */,
+				3B4C0FF826F3278300B83C65 /* pkcs5.h */,
+				3B4C0FDC26F3278200B83C65 /* pkcs11.h */,
+				3B4C0FF526F3278300B83C65 /* pkcs12.h */,
+				3B4C101526F3278400B83C65 /* platform_time.h */,
+				3B4C0FF926F3278300B83C65 /* platform.h */,
+				3B4C0FEA26F3278300B83C65 /* ripemd160.h */,
+				3B4C0FDE26F3278200B83C65 /* rsa_internal.h */,
+				3B4C0FF126F3278300B83C65 /* rsa.h */,
+				3B4C101E26F3278400B83C65 /* sha1.h */,
+				3B4C0FE926F3278300B83C65 /* sha256.h */,
+				3B4C0FF026F3278300B83C65 /* sha512.h */,
+				3B4C101F26F3278400B83C65 /* ssl_cache.h */,
+				3B4C0FE526F3278200B83C65 /* ssl_ciphersuites.h */,
+				3B4C0FFF26F3278300B83C65 /* ssl_cookie.h */,
+				3B4C0FF226F3278300B83C65 /* ssl_internal.h */,
+				3B4C100926F3278400B83C65 /* ssl_ticket.h */,
+				3B4C101C26F3278400B83C65 /* ssl.h */,
+				3B4C100D26F3278400B83C65 /* threading.h */,
+				3B4C100226F3278300B83C65 /* timing.h */,
+				3B4C0FE626F3278200B83C65 /* version.h */,
+				3B4C101726F3278400B83C65 /* x509_crl.h */,
+				3B4C101626F3278400B83C65 /* x509_crt.h */,
+				3B4C0FEF26F3278300B83C65 /* x509_csr.h */,
+				3B4C102026F3278400B83C65 /* x509.h */,
+				3B4C101226F3278400B83C65 /* xtea.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		3B4C118926F327EB00B83C65 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				3B4C121826F3280A00B83C65 /* MbedTLS.h */,
+				3B4C11C426F327FD00B83C65 /* aes.h */,
+				3B4C11BA26F327FD00B83C65 /* aesni.h */,
+				3B4C11BE26F327FD00B83C65 /* arc4.h */,
+				3B4C11BF26F327FD00B83C65 /* asn1.h */,
+				3B4C119726F327FC00B83C65 /* asn1write.h */,
+				3B4C11B226F327FD00B83C65 /* base64.h */,
+				3B4C119E26F327FC00B83C65 /* bignum.h */,
+				3B4C119A26F327FC00B83C65 /* blowfish.h */,
+				3B4C11CD26F327FD00B83C65 /* bn_mul.h */,
+				3B4C118B26F327FB00B83C65 /* camellia.h */,
+				3B4C11AA26F327FC00B83C65 /* ccm.h */,
+				3B4C11A326F327FC00B83C65 /* certs.h */,
+				3B4C11A426F327FC00B83C65 /* check_config.h */,
+				3B4C119426F327FC00B83C65 /* cipher_internal.h */,
+				3B4C11B626F327FD00B83C65 /* cipher.h */,
+				3B4C11B526F327FD00B83C65 /* cmac.h */,
+				3B4C119626F327FC00B83C65 /* compat-1.3.h */,
+				3B4C119B26F327FC00B83C65 /* config.h */,
+				3B4C11BB26F327FD00B83C65 /* ctr_drbg.h */,
+				3B4C11A726F327FC00B83C65 /* debug.h */,
+				3B4C118C26F327FC00B83C65 /* des.h */,
+				3B4C11C226F327FD00B83C65 /* dhm.h */,
+				3B4C119226F327FC00B83C65 /* ecdh.h */,
+				3B4C11C626F327FD00B83C65 /* ecdsa.h */,
+				3B4C11A126F327FC00B83C65 /* ecjpake.h */,
+				3B4C11AD26F327FC00B83C65 /* ecp_internal.h */,
+				3B4C11BC26F327FD00B83C65 /* ecp.h */,
+				3B4C11B326F327FD00B83C65 /* entropy_poll.h */,
+				3B4C11D026F327FE00B83C65 /* entropy.h */,
+				3B4C11A626F327FC00B83C65 /* error.h */,
+				3B4C119326F327FC00B83C65 /* gcm.h */,
+				3B4C118E26F327FC00B83C65 /* havege.h */,
+				3B4C11A026F327FC00B83C65 /* hmac_drbg.h */,
+				3B4C11C926F327FD00B83C65 /* md_internal.h */,
+				3B4C11A526F327FC00B83C65 /* md.h */,
+				3B4C118F26F327FC00B83C65 /* md2.h */,
+				3B4C11CE26F327FE00B83C65 /* md4.h */,
+				3B4C118D26F327FC00B83C65 /* md5.h */,
+				3B4C11B426F327FD00B83C65 /* memory_buffer_alloc.h */,
+				3B4C11AC26F327FC00B83C65 /* net_sockets.h */,
+				3B4C11AF26F327FD00B83C65 /* net.h */,
+				3B4C119826F327FC00B83C65 /* oid.h */,
+				3B4C11C026F327FD00B83C65 /* padlock.h */,
+				3B4C11B026F327FD00B83C65 /* pem.h */,
+				3B4C11BD26F327FD00B83C65 /* pk_internal.h */,
+				3B4C11AE26F327FC00B83C65 /* pk.h */,
+				3B4C11C526F327FD00B83C65 /* pkcs5.h */,
+				3B4C11CB26F327FD00B83C65 /* pkcs11.h */,
+				3B4C11B726F327FD00B83C65 /* pkcs12.h */,
+				3B4C11C826F327FD00B83C65 /* platform_time.h */,
+				3B4C119F26F327FC00B83C65 /* platform.h */,
+				3B4C119026F327FC00B83C65 /* ripemd160.h */,
+				3B4C11B826F327FD00B83C65 /* rsa_internal.h */,
+				3B4C11A826F327FC00B83C65 /* rsa.h */,
+				3B4C119926F327FC00B83C65 /* sha1.h */,
+				3B4C119526F327FC00B83C65 /* sha256.h */,
+				3B4C119C26F327FC00B83C65 /* sha512.h */,
+				3B4C11C726F327FD00B83C65 /* ssl_cache.h */,
+				3B4C11A226F327FC00B83C65 /* ssl_ciphersuites.h */,
+				3B4C119D26F327FC00B83C65 /* ssl_cookie.h */,
+				3B4C11B126F327FD00B83C65 /* ssl_internal.h */,
+				3B4C11B926F327FD00B83C65 /* ssl_ticket.h */,
+				3B4C11C326F327FD00B83C65 /* ssl.h */,
+				3B4C11A926F327FC00B83C65 /* threading.h */,
+				3B4C118A26F327FB00B83C65 /* timing.h */,
+				3B4C11CC26F327FD00B83C65 /* version.h */,
+				3B4C119126F327FC00B83C65 /* x509_crl.h */,
+				3B4C11CF26F327FE00B83C65 /* x509_crt.h */,
+				3B4C11C126F327FD00B83C65 /* x509_csr.h */,
+				3B4C11CA26F327FD00B83C65 /* x509.h */,
+				3B4C11AB26F327FC00B83C65 /* xtea.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3B4C0F9726F323CF00B83C65 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B4C121126F3280200B83C65 /* x509.h in Headers */,
+				3B4C120726F3280100B83C65 /* padlock.h in Headers */,
+				3B4C11FF26F3280100B83C65 /* rsa_internal.h in Headers */,
+				3B4C11F126F3280000B83C65 /* ccm.h in Headers */,
+				3B4C121226F3280200B83C65 /* pkcs11.h in Headers */,
+				3B4C11F526F3280000B83C65 /* pk.h in Headers */,
+				3B4C120B26F3280200B83C65 /* aes.h in Headers */,
+				3B4C11EB26F327FF00B83C65 /* check_config.h in Headers */,
+				3B4C11D626F327FE00B83C65 /* md2.h in Headers */,
+				3B4C120826F3280100B83C65 /* x509_csr.h in Headers */,
+				3B4C11E426F327FF00B83C65 /* ssl_cookie.h in Headers */,
+				3B4C11ED26F327FF00B83C65 /* error.h in Headers */,
+				3B4C120126F3280100B83C65 /* aesni.h in Headers */,
+				3B4C11F626F3280000B83C65 /* net.h in Headers */,
+				3B4C11EC26F327FF00B83C65 /* md.h in Headers */,
+				3B4C11E826F327FF00B83C65 /* ecjpake.h in Headers */,
+				3B4C11EE26F3280000B83C65 /* debug.h in Headers */,
+				3B4C11D726F327FE00B83C65 /* ripemd160.h in Headers */,
+				3B4C11E326F327FF00B83C65 /* sha512.h in Headers */,
+				3B4C11F726F3280000B83C65 /* pem.h in Headers */,
+				3B4C120D26F3280200B83C65 /* ecdsa.h in Headers */,
+				3B4C11E226F327FF00B83C65 /* config.h in Headers */,
+				3B4C11D326F327FE00B83C65 /* des.h in Headers */,
+				3B4C11D526F327FE00B83C65 /* havege.h in Headers */,
+				3B4C120426F3280100B83C65 /* pk_internal.h in Headers */,
+				3B4C11FC26F3280100B83C65 /* cmac.h in Headers */,
+				3B4C11D426F327FE00B83C65 /* md5.h in Headers */,
+				3B4C120626F3280100B83C65 /* asn1.h in Headers */,
+				3B4C11D226F327FE00B83C65 /* camellia.h in Headers */,
+				3B4C11F826F3280000B83C65 /* ssl_internal.h in Headers */,
+				3B4C120526F3280100B83C65 /* arc4.h in Headers */,
+				3B4C11FB26F3280000B83C65 /* memory_buffer_alloc.h in Headers */,
+				3B4C121626F3280200B83C65 /* x509_crt.h in Headers */,
+				3B4C11DF26F327FF00B83C65 /* oid.h in Headers */,
+				3B4C121926F3280A00B83C65 /* MbedTLS.h in Headers */,
+				3B4C11DA26F327FE00B83C65 /* gcm.h in Headers */,
+				3B4C121326F3280200B83C65 /* version.h in Headers */,
+				3B4C11F326F3280000B83C65 /* net_sockets.h in Headers */,
+				3B4C11E726F327FF00B83C65 /* hmac_drbg.h in Headers */,
+				3B4C11DB26F327FE00B83C65 /* cipher_internal.h in Headers */,
+				3B4C11F426F3280000B83C65 /* ecp_internal.h in Headers */,
+				3B4C121426F3280200B83C65 /* bn_mul.h in Headers */,
+				3B4C11F926F3280000B83C65 /* base64.h in Headers */,
+				3B4C11EF26F3280000B83C65 /* rsa.h in Headers */,
+				3B4C120E26F3280200B83C65 /* ssl_cache.h in Headers */,
+				3B4C120F26F3280200B83C65 /* platform_time.h in Headers */,
+				3B4C11E026F327FF00B83C65 /* sha1.h in Headers */,
+				3B4C11D926F327FE00B83C65 /* ecdh.h in Headers */,
+				3B4C11E126F327FF00B83C65 /* blowfish.h in Headers */,
+				3B4C11E926F327FF00B83C65 /* ssl_ciphersuites.h in Headers */,
+				3B4C11F026F3280000B83C65 /* threading.h in Headers */,
+				3B4C11E626F327FF00B83C65 /* platform.h in Headers */,
+				3B4C11D826F327FE00B83C65 /* x509_crl.h in Headers */,
+				3B4C11D126F327FE00B83C65 /* timing.h in Headers */,
+				3B4C121026F3280200B83C65 /* md_internal.h in Headers */,
+				3B4C11F226F3280000B83C65 /* xtea.h in Headers */,
+				3B4C120026F3280100B83C65 /* ssl_ticket.h in Headers */,
+				3B4C11FD26F3280100B83C65 /* cipher.h in Headers */,
+				3B4C11DD26F327FE00B83C65 /* compat-1.3.h in Headers */,
+				3B4C121526F3280200B83C65 /* md4.h in Headers */,
+				3B4C11EA26F327FF00B83C65 /* certs.h in Headers */,
+				3B4C11DC26F327FE00B83C65 /* sha256.h in Headers */,
+				3B4C120C26F3280200B83C65 /* pkcs5.h in Headers */,
+				3B4C120326F3280100B83C65 /* ecp.h in Headers */,
+				3B4C120A26F3280200B83C65 /* ssl.h in Headers */,
+				3B4C11FE26F3280100B83C65 /* pkcs12.h in Headers */,
+				3B4C121726F3280300B83C65 /* entropy.h in Headers */,
+				3B4C11FA26F3280000B83C65 /* entropy_poll.h in Headers */,
+				3B4C120226F3280100B83C65 /* ctr_drbg.h in Headers */,
+				3B4C120926F3280100B83C65 /* dhm.h in Headers */,
+				3B4C11DE26F327FE00B83C65 /* asn1write.h in Headers */,
+				3B4C11E526F327FF00B83C65 /* bignum.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B4C0FB426F3241600B83C65 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B4C104126F3278500B83C65 /* dhm.h in Headers */,
+				3B4C103726F3278500B83C65 /* sha512.h in Headers */,
+				3B4C103526F3278500B83C65 /* md2.h in Headers */,
+				3B4C102926F3278500B83C65 /* bn_mul.h in Headers */,
+				3B4C103F26F3278500B83C65 /* pkcs5.h in Headers */,
+				3B4C103926F3278500B83C65 /* ssl_internal.h in Headers */,
+				3B4C104D26F3278600B83C65 /* ecp.h in Headers */,
+				3B4C104026F3278500B83C65 /* platform.h in Headers */,
+				3B4C102D26F3278500B83C65 /* version.h in Headers */,
+				3B4C106126F3278600B83C65 /* config.h in Headers */,
+				3B4C105F26F3278600B83C65 /* compat-1.3.h in Headers */,
+				3B4C104826F3278600B83C65 /* entropy.h in Headers */,
+				3B4C102326F3278400B83C65 /* pkcs11.h in Headers */,
+				3B4C103C26F3278500B83C65 /* pkcs12.h in Headers */,
+				3B4C103A26F3278500B83C65 /* blowfish.h in Headers */,
+				3B4C104426F3278500B83C65 /* md.h in Headers */,
+				3B4C105726F3278600B83C65 /* certs.h in Headers */,
+				3B4C102226F3278400B83C65 /* bignum.h in Headers */,
+				3B4C104926F3278600B83C65 /* timing.h in Headers */,
+				3B4C104526F3278500B83C65 /* net.h in Headers */,
+				3B4C102726F3278400B83C65 /* cmac.h in Headers */,
+				3B4C105626F3278600B83C65 /* md_internal.h in Headers */,
+				3B4C104326F3278500B83C65 /* aes.h in Headers */,
+				3B4C105426F3278600B83C65 /* threading.h in Headers */,
+				3B4C105A26F3278600B83C65 /* pk_internal.h in Headers */,
+				3B4C103D26F3278500B83C65 /* asn1write.h in Headers */,
+				3B4C105B26F3278600B83C65 /* ecp_internal.h in Headers */,
+				3B4C105326F3278600B83C65 /* camellia.h in Headers */,
+				3B4C106726F3278700B83C65 /* x509.h in Headers */,
+				3B4C103326F3278500B83C65 /* md4.h in Headers */,
+				3B4C102F26F3278500B83C65 /* arc4.h in Headers */,
+				3B4C104F26F3278600B83C65 /* base64.h in Headers */,
+				3B4C103826F3278500B83C65 /* rsa.h in Headers */,
+				3B4C102A26F3278500B83C65 /* ccm.h in Headers */,
+				3B4C106426F3278700B83C65 /* net_sockets.h in Headers */,
+				3B4C104626F3278600B83C65 /* ssl_cookie.h in Headers */,
+				3B4C103E26F3278500B83C65 /* asn1.h in Headers */,
+				3B4C105926F3278600B83C65 /* xtea.h in Headers */,
+				3B4C106326F3278700B83C65 /* ssl.h in Headers */,
+				3B4C106626F3278700B83C65 /* ssl_cache.h in Headers */,
+				3B4C106226F3278600B83C65 /* ecdh.h in Headers */,
+				3B4C105D26F3278600B83C65 /* x509_crt.h in Headers */,
+				3B4C103026F3278500B83C65 /* sha256.h in Headers */,
+				3B4C105E26F3278600B83C65 /* x509_crl.h in Headers */,
+				3B4C104726F3278600B83C65 /* error.h in Headers */,
+				3B4C102C26F3278500B83C65 /* ssl_ciphersuites.h in Headers */,
+				3B4C103226F3278500B83C65 /* check_config.h in Headers */,
+				3B4C102126F3278400B83C65 /* ecdsa.h in Headers */,
+				3B4C102B26F3278500B83C65 /* pk.h in Headers */,
+				3B4C105226F3278600B83C65 /* padlock.h in Headers */,
+				3B4C103426F3278500B83C65 /* cipher.h in Headers */,
+				3B4C105526F3278600B83C65 /* cipher_internal.h in Headers */,
+				3B4C102626F3278400B83C65 /* oid.h in Headers */,
+				3B4C10F926F327B300B83C65 /* MbedTLS.h in Headers */,
+				3B4C104C26F3278600B83C65 /* md5.h in Headers */,
+				3B4C102426F3278400B83C65 /* memory_buffer_alloc.h in Headers */,
+				3B4C102826F3278400B83C65 /* havege.h in Headers */,
+				3B4C105826F3278600B83C65 /* debug.h in Headers */,
+				3B4C105C26F3278600B83C65 /* platform_time.h in Headers */,
+				3B4C105126F3278600B83C65 /* ctr_drbg.h in Headers */,
+				3B4C103126F3278500B83C65 /* ripemd160.h in Headers */,
+				3B4C105026F3278600B83C65 /* ssl_ticket.h in Headers */,
+				3B4C106026F3278600B83C65 /* des.h in Headers */,
+				3B4C103626F3278500B83C65 /* x509_csr.h in Headers */,
+				3B4C104E26F3278600B83C65 /* aesni.h in Headers */,
+				3B4C103B26F3278500B83C65 /* pem.h in Headers */,
+				3B4C104A26F3278600B83C65 /* hmac_drbg.h in Headers */,
+				3B4C104226F3278500B83C65 /* entropy_poll.h in Headers */,
+				3B4C104B26F3278600B83C65 /* ecjpake.h in Headers */,
+				3B4C102E26F3278500B83C65 /* gcm.h in Headers */,
+				3B4C106526F3278700B83C65 /* sha1.h in Headers */,
+				3B4C102526F3278400B83C65 /* rsa_internal.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3B4C0F9B26F323CF00B83C65 /* MbedTLS (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B4C0FA526F323CF00B83C65 /* Build configuration list for PBXNativeTarget "MbedTLS (iOS)" */;
+			buildPhases = (
+				3B4C0F9726F323CF00B83C65 /* Headers */,
+				3B4C0F9826F323CF00B83C65 /* Sources */,
+				3B4C0F9926F323CF00B83C65 /* Frameworks */,
+				3B4C0F9A26F323CF00B83C65 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MbedTLS (iOS)";
+			productName = MbedTLS;
+			productReference = 3B4C0F9C26F323CF00B83C65 /* MbedTLS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3B4C0FB326F3241600B83C65 /* MbedTLS (iOS Simulator) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B4C0FBA26F3241600B83C65 /* Build configuration list for PBXNativeTarget "MbedTLS (iOS Simulator)" */;
+			buildPhases = (
+				3B4C0FB426F3241600B83C65 /* Headers */,
+				3B4C0FB626F3241600B83C65 /* Sources */,
+				3B4C0FB826F3241600B83C65 /* Frameworks */,
+				3B4C0FB926F3241600B83C65 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MbedTLS (iOS Simulator)";
+			productName = MbedTLS;
+			productReference = 3B4C0FBD26F3241600B83C65 /* MbedTLS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3B4C0F9326F323CE00B83C65 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = NO;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					3B4C0F9B26F323CF00B83C65 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 3B4C0F9626F323CE00B83C65 /* Build configuration list for PBXProject "MbedTLS" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3B4C0F9226F323CE00B83C65;
+			productRefGroup = 3B4C0F9D26F323CF00B83C65 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B4C0F9B26F323CF00B83C65 /* MbedTLS (iOS) */,
+				3B4C0FB326F3241600B83C65 /* MbedTLS (iOS Simulator) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B4C0F9A26F323CF00B83C65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B4C0FC926F3253B00B83C65 /* MbedTLS.xcconfig in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B4C0FB926F3241600B83C65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B4C0F9826F323CF00B83C65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B4C0FB626F3241600B83C65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3B4C0FA326F323CF00B83C65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B4C0FC826F3253B00B83C65 /* MbedTLS.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3B4C0FA426F323CF00B83C65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B4C0FC826F3253B00B83C65 /* MbedTLS.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3B4C0FA626F323CF00B83C65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iphoneos",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zsy.MbedTLS;
+				PRODUCT_NAME = MbedTLS;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3B4C0FA726F323CF00B83C65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iphoneos",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zsy.MbedTLS;
+				PRODUCT_NAME = MbedTLS;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3B4C0FBB26F3241600B83C65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iphonesimulator",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zsy.MbedTLS;
+				PRODUCT_NAME = MbedTLS;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = iphonesimulator;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3B4C0FBC26F3241600B83C65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iphonesimulator",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zsy.MbedTLS;
+				PRODUCT_NAME = MbedTLS;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = iphonesimulator;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B4C0F9626F323CE00B83C65 /* Build configuration list for PBXProject "MbedTLS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B4C0FA326F323CF00B83C65 /* Debug */,
+				3B4C0FA426F323CF00B83C65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B4C0FA526F323CF00B83C65 /* Build configuration list for PBXNativeTarget "MbedTLS (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B4C0FA626F323CF00B83C65 /* Debug */,
+				3B4C0FA726F323CF00B83C65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B4C0FBA26F3241600B83C65 /* Build configuration list for PBXNativeTarget "MbedTLS (iOS Simulator)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B4C0FBB26F3241600B83C65 /* Debug */,
+				3B4C0FBC26F3241600B83C65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3B4C0F9326F323CE00B83C65 /* Project object */;
+}
