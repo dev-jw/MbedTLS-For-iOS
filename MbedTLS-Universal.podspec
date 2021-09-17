@@ -19,10 +19,10 @@ Pod::Spec.new do |s|
 
   s.description      = "MbedTLS is an SSL/TLS and Crypto toolkit. gone in iOS, this spec gives your project non-deprecated MbedTLS support. Supports iOS including Simulator (armv7,armv7s,arm64,x86_64)."
 
-  s.homepage         = 'https://github.com/hjw/MbedTLS'
+  s.homepage         = 'https://github.com/dev-jw/MbedTLS-For-iOS'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'hjw' => 'Estenian.huang@tuya.com' }
-  s.source           = { :git => 'https://github.com/hjw/MbedTLS.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/dev-jw/MbedTLS-For-iOS', :tag => s.version.to_s }
 
   s.requires_arc = true
   s.cocoapods_version = '>= 1.9'
