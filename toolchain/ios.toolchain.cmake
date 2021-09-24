@@ -61,7 +61,7 @@ if(${IOS_PLATFORM} STREQUAL "DEVICE")
   # device platform
   set(IOS_PLATFORM_LOCATION "iPhoneOS.platform")
   # device arch
-  set(IOS_ARCH armv6 armv7 armv7s arm64 arm64e)
+  set(IOS_ARCH armv7 armv7s arm64 arm64e)
   # enable bitcode
   set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fembed-bitcode")
   set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fembed-bitcode")
