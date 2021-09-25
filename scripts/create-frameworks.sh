@@ -48,7 +48,8 @@ ditto "${OUTPUT_DIR}/iphonesimulator/${FWNAME}.framework" "${BASE_PWD}/Framework
 # XCFramework
 rm -rf "${BASE_PWD}/Frameworks/${FWNAME}.xcframework"
 
-xcrun xcodebuild -quiet -create-xcframework \
+# -quiet
+xcrun xcodebuild -create-xcframework \
 	-framework "${OUTPUT_DIR}/iphoneos/${FWNAME}.framework" \
 	-framework "${OUTPUT_DIR}/iphonesimulator/${FWNAME}.framework" \
 	-output "${BASE_PWD}/Frameworks/${FWNAME}.xcframework"
