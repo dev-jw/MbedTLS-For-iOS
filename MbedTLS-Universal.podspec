@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 
   s.homepage         = 'https://github.com/dev-jw/MbedTLS-For-iOS'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'hjw' => 'Estenian.huang@tuya.com' }
+  s.author           = { 'hjw' => 'hjw13626@gmail.com' }
   s.source           = { :git => 'https://github.com/dev-jw/MbedTLS-For-iOS', :tag => s.version.to_s }
 
   s.requires_arc = true
